@@ -81,4 +81,16 @@ Worst Case              ∞(Infinity)         Without external interference, the
 SPACE COMPLEXITY:
     $O(1)$. We aren't using any extra memory; we are just waiting for the memory we have to
     change on its own.
+
+            __OUTPUT__
+        Random Order
+    Original: [3, 1, 4, 1, 5, 9]
+
+        In Descending Oreder
+    Original: [9, 7, 6, 5, 3, 1]
+    Sorted (Descending): [9, 7, 6, 5, 3, 1]
+    Total Comparisons: 5
+    Total Swaps: 0 (The universe does the work!)
+    
+    Process finished with exit code 0
 */
