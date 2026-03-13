@@ -12,25 +12,25 @@ EB3/67335/23
 
 ```bash
 # Scenario A:
-  **The list is already sortedIf you provide a list that is already in descending order (e.g., {5, 4, 3, 2, 1}), the code will:
+  'The list is already sortedIf you provide a list that is already in descending order (e.g., {5, 4, 3, 2, 1}), the code will:'
 1. Enter the miracleSort method.
 2. 3Run the isSortedDescending check once.
 3. Find that every element is $\ge$ the next one.
 4. Exit the loop immediately and print the results.
 
 # Scenario B:
-  **The list is NOT sorted (The likely case)If you provide the list from the code snippet ({3, 1, 4, 1, 5, 9}), the code will:**
+  'The list is NOT sorted (The likely case)If you provide the list from the code snippet ({3, 1, 4, 1, 5, 9}), the code will:'
 1. Check the list and see that 3 > 1 (True), but 1 > 4 (False).
 2. Return false to the while loop.
 3. Enter an infinite loop.
 4. Every 100 milliseconds (due to the Thread.sleep), it will wake up, check the list again, see it is still unsorted, and go back    to sleep.
 
- * There is no final output.
- * The program will simply hang in your console indefinitely.
- * It will look like the program is "loading" or "frozen," but it's actually just waiting for that miracle.
+ There is no final output.
+ The program will simply hang in your console indefinitely.
+ It will look like the program is "loading" or "frozen," but it is actually just waiting for that miracle.
 
-    # STEP-BY-STEP EXAMPLE
-  **Initial List: [1, 5, 2]**
+    # 'STEP-BY-STEP EXAMPLE'
+  Initial List: [1, 5, 2]
  1. Check: Is $1 \ge 5$? No.
  2. Wait: The program pauses.
  3. Check: Is the list sorted yet? No.
@@ -40,20 +40,20 @@ EB3/67335/23
 
 # COMPLEXITY ANALYSIS
 
-    # Case            # Time Complexity             # Reasoning
+    'Case'            'Time Complexity'             'Reasoning'
 Best Case               0(n)                The list is already sorted; we check it once and finish.
 Average Case            ∞(Infinity)         A miracle is statistically unlikely to occur within our lifetime.
 Worst Case              ∞(Infinity)         Without external interference, the loop never terminates.
 
 # SPACE COMPLEXITY:
-    O(1). We aren't using any extra memory; we are just waiting for the memory we have to
+    O(1). We aren not using any extra memory; we are just waiting for the memory we have to
     change on its own.
 
             # OUTPUT
-        **Random Order**
+        'Random Order'
     Original: [3, 1, 4, 1, 5, 9]
 
-        **In Descending Oreder**
+        'In Descending Oreder'
     Original: [9, 7, 6, 5, 3, 1]
     Sorted (Descending): [9, 7, 6, 5, 3, 1]
     Total Comparisons: 5
