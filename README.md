@@ -25,18 +25,18 @@ EB3/67335/23
 3. Enter an infinite loop.
 4. Every 100 milliseconds (due to the Thread.sleep), it will wake up, check the list again, see it is still unsorted, and go back    to sleep.
 
- There is no final output.
- The program will simply hang in your console indefinitely.
- It will look like the program is "loading" or "frozen," but it is actually just waiting for that miracle.
+There is no final output.
+The program will simply hang in your console indefinitely.
+It will look like the program is "loading" or "frozen," but it is actually just waiting for that miracle.
 
-    # 'STEP-BY-STEP EXAMPLE'
-  Initial List: [1, 5, 2]
- 1. Check: Is $1 \ge 5$? No.
- 2. Wait: The program pauses.
- 3. Check: Is the list sorted yet? No.
- 4. The Miracle: A solar flare hits the computer, flipping bits. The memory now reads [5, 2, 1].
- 5. Check: Is $5 \ge 2$? Yes. Is $2 \ge 1$? Yes.
- 6. Done: The list is now "sorted."
+# STEP-BY-STEP EXAMPLE
+  'Initial List: [1, 5, 2]'
+1. Check: Is $1 \ge 5$? No.
+2. Wait: The program pauses.
+3. Check: Is the list sorted yet? No.
+4. The Miracle: A solar flare hits the computer, flipping bits. The memory now reads [5, 2, 1].
+5. Check: Is $5 \ge 2$? Yes. Is $2 \ge 1$? Yes.
+6. Done: The list is now "sorted."
 
 # COMPLEXITY ANALYSIS
 
@@ -46,18 +46,18 @@ Average Case            ∞(Infinity)         A miracle is statistically unlikel
 Worst Case              ∞(Infinity)         Without external interference, the loop never terminates.
 
 # SPACE COMPLEXITY:
-    O(1). We aren not using any extra memory; we are just waiting for the memory we have to
-    change on its own.
+O(1). We aren not using any extra memory; we are just waiting for the memory we have to
+change on its own.
 
-            # OUTPUT
-        'Random Order'
-    Original: [3, 1, 4, 1, 5, 9]
+# OUTPUT
+ 'Random Order'
+Original: [3, 1, 4, 1, 5, 9]
 
-        'In Descending Oreder'
-    Original: [9, 7, 6, 5, 3, 1]
-    Sorted (Descending): [9, 7, 6, 5, 3, 1]
-    Total Comparisons: 5
-    Total Swaps: 0 (The universe does the work!)
+ 'In Descending Oreder'
+Original: [9, 7, 6, 5, 3, 1]
+Sorted (Descending): [9, 7, 6, 5, 3, 1]
+Total Comparisons: 5
+Total Swaps: 0 (The universe does the work!)
     
-    Process finished with exit code 0
+Process finished with exit code 0
 ```
