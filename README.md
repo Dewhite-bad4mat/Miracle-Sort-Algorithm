@@ -1,4 +1,4 @@
-Evans Odhiambo 
+"Evans Odhiambo"
 EB3/67335/23
 
 # Miracle-Sort-Algorithm(Decending)
