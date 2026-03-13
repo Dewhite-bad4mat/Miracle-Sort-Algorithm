@@ -12,7 +12,7 @@ EB3/67335/23
 
 ```bash
 # Scenario A:
-  **The list is already sortedIf you provide a list that is already in descending order (e.g., {5, 4, 3, 2, 1}), the code will:**
+  **The list is already sortedIf you provide a list that is already in descending order (e.g., {5, 4, 3, 2, 1}), the code will:
 1. Enter the miracleSort method.
 2. 3Run the isSortedDescending check once.
 3. Find that every element is $\ge$ the next one.
